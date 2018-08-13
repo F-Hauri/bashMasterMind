@@ -59,7 +59,7 @@ usage() {
 numCol=6   # min 2, max 6
 numPos=4   # min 1, max=f(numCol): numCol=6->max=17, 5->19, 4->22, 3->28, 2->44
 numTries=9
-while getopts "c:p:t:" opt ;do
+while getopts "hc:p:t:" opt ;do
     case $opt in
 	c ) numCol=$OPTARG ;;
 	p ) numPos=$OPTARG ;;
